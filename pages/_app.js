@@ -49,6 +49,7 @@ class MyApp extends App {
             <Component pageContext={this.pageContext} {...pageProps} />
           </MuiThemeProvider>
         </JssProvider>
+        {/* <NProgressStyles color="#e34234" spinner={false} /> */}
       </Container>
     );
   }

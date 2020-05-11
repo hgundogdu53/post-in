@@ -18,7 +18,7 @@ const routes = require("./routes");
 require("./passport");
 
 const dev = process.env.NODE_ENV !== "production";
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 const ROOT_URL = dev ? `http://localhost:${port}` : process.env.PRODUCTION_URL;
 const app = next({ dev });
 const handle = app.getRequestHandler();

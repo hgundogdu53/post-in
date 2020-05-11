@@ -6,13 +6,13 @@ import flush from "styled-jsx/server";
 import { getSessionFromServer, getUserScript } from "../lib/auth";
 
 class MyDocument extends Document {
-  static getInitialProps = ctx => {
+  static getInitialProps = (ctx) => {
     const user = getSessionFromServer(ctx.req);
 
     // Render app and page and get the context of the page with collected side effects.
     let pageContext;
-    const page = ctx.renderPage(Component => {
-      const WrappedComponent = props => {
+    const page = ctx.renderPage((Component) => {
+      const WrappedComponent = (props) => {
         pageContext = props.pageContext;
         return <Component {...props} />;
       };
@@ -30,12 +30,12 @@ class MyDocument extends Document {
             id="jss-server-side"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{
-              __html: pageContext.sheetsRegistry.toString()
+              __html: pageContext.sheetsRegistry.toString(),
             }}
           />
           {flush() || null}
         </React.Fragment>
-      )
+      ),
     };
   };
 
