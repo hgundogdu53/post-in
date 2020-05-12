@@ -26,7 +26,7 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <>
         <Head>
           <title>Post-inn</title>
         </Head>
@@ -50,7 +50,7 @@ class MyApp extends App {
           </MuiThemeProvider>
         </JssProvider>
         {/* <NProgressStyles color="#e34234" spinner={false} /> */}
-      </Container>
+      </>
     );
   }
 }
