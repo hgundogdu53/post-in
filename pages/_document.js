@@ -68,7 +68,10 @@ class MyDocument extends Document {
             sizes="16x16"
             href="/static/images/favicon-16x16.png"
           />
-          <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+          <link
+            href="https://fonts.googleapis.com/css?family=Staatliches&display=swap"
+            rel="stylesheet"
+          />
 
           <meta charSet="utf-8" />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
@@ -85,7 +88,6 @@ class MyDocument extends Document {
             name="description"
             content="A social media post-in application built with Next.js"
           />
-
         </Head>
         <body>
           <Main />
