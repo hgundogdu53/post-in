@@ -1,6 +1,6 @@
 ## Getting Started
 
-URL: https://post-iin.herokuapp.com/
+0. URL: https://post-iin.herokuapp.com/
 
 1. Install dependencies (`npm install` or `yarn install`)
 2. Go to [MLab](mlab.com) and create a new (free) database
