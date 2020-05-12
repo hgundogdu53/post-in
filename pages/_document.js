@@ -48,22 +48,28 @@ class MyDocument extends Document {
           {/* You can use the head tag, just not for setting <title> as it leads to unexpected behavior */}
           <link
             rel="shortcut icon"
-            href="/static/favicon.ico"
-            type="image/x-icon"
+            href="/static/images/favicon.ico"
+            type="image/icon"
           />
-          <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+          <link
+            rel="icon"
+            href="/static/images/favicon.ico"
+            type="image/icon"
+          />
           <link
             rel="icon"
             type="image/png"
             sizes="32x32"
-            href="/static/favicon-32x32.png"
+            href="/static/images/favicon-32x32.png"
           />
           <link
             rel="icon"
             type="image/png"
             sizes="16x16"
-            href="/static/favicon-16x16.png"
+            href="/static/images/favicon-16x16.png"
           />
+          <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+
           <meta charSet="utf-8" />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
           <meta
@@ -77,8 +83,9 @@ class MyDocument extends Document {
           />
           <meta
             name="description"
-            content="A social media site built with Next.js"
+            content="A social media post-in application built with Next.js"
           />
+
         </Head>
         <body>
           <Main />

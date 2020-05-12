@@ -1,5 +1,5 @@
 {
-  "name": "next-connect",
+  "name": "post-iin",
   "version": "1.0.0",
   "author": "Huseyin Gundogdu",
   "description": "Social media app",
@@ -8,7 +8,7 @@
     "dev": "nodemon server/app.js --watch server",
     "start": "node server/app.js",
     "build": "next build",
-    "heroku-postbuild": "next build"
+    "heroku-postbuild": "next build",
     "deploy": "now --public",
     "alias": "now alias"
   },

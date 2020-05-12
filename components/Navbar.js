@@ -2,7 +2,6 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
-import ShareOutlined from "@material-ui/icons/ShareOutlined";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 import ActiveLink from "./ActiveLink";
@@ -19,14 +18,30 @@ const Navbar = ({ classes, router, pageProps: { auth } }) => {
       <Toolbar>
         {/* Main Title / Home Button */}
         <ActiveLink href="/">
-          <ShareOutlined className={classes.icon} />
+          <img
+            src="../static/images/favicon-32x32.png"
+            className={classes.icon}
+            style={{
+              paddingRight: 10,
+            }}
+          />
         </ActiveLink>
         <Typography
           variant="h5"
           component="h1"
           className={classes.toolbarTitle}
+          color="textPrimary"
         >
-          <ActiveLink href="/">NextConnect</ActiveLink>
+          <ActiveLink href="/" color="textPrimary">
+            <div
+              style={{
+                color: "#edc80c",
+                fontSize: "60",
+              }}
+            >
+              Post-iin
+            </div>
+          </ActiveLink>
         </Typography>
 
         {user._id ? (

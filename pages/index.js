@@ -55,10 +55,9 @@ const Index = ({ classes, auth }) => (
           color="textSecondary"
           component="p"
         >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
-          nesciunt suscipit voluptas harum commodi fugiat ab, rem facilis alias
-          veritatis labore totam nihil! Distinctio veniam consectetur vitae
-          magni. Dolorem, necessitatibus.
+          We bring you closer to the people and things you love. Post-iin is
+          where life flows. It's where the people you need, the information you
+          share, and the tools you use come together to get things done.
         </Typography>
         <Button
           className={classes.fabButton}
