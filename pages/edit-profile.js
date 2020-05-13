@@ -73,7 +73,7 @@ class EditProfile extends React.Component {
     updateUser(this.state._id, this.userData)
       .then((updatedUser) => {
         this.setState({ updatedUser, openSuccess: true }, () => {
-          setTimeout(() => Router.push(`/profile/${this.state._id}`), 6000);
+          setTimeout(() => Router.push(`/profile/${this.state._id}`), 4000);
         });
       })
       .catch(this.showError);
