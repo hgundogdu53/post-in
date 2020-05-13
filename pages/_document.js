@@ -7,6 +7,7 @@ import { getSessionFromServer, getUserScript } from "../lib/auth";
 
 class MyDocument extends Document {
   static getInitialProps = (ctx) => {
+    //ctx updated
     const user = ctx.req ? getSessionFromServer(ctx.req) : {};
 
     // Render app and page and get the context of the page with collected side effects.
