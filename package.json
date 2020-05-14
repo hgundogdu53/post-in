@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "nodemon server/app.js --watch server",
     "start": "node server/app.js",
-    "build": "next build"
+    "build": "next build",
+    "heroku-postbuild": "next build"
   },
   "cacheDirectories": [
     ".next/cache"
